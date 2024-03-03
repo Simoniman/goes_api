@@ -12,7 +12,7 @@ The GOES-API is still in development. Feel free to try it out and to report issu
 
 ## Quickstart
 
-The code in this repository provides an API to download, query and filter GOES16 and GOES17 satellite data.
+The code in this repository provides an API to download, query and filter GOES16 and GOES17 and GOES 18 satellite data.
 
 Data download and query/filtering is available:
 - for local file systems, Google Cloud Storage and AWS S3.
@@ -40,16 +40,13 @@ Documentation is available at XXXXX
 
 ### pip
 
-GOES-API can be installed via [pip][pip_link] on Linux, Mac, and Windows.
-On Windows you can install [WinPython][winpy_link] to get Python and pip running.
-
-Then, install the GOES-API package by typing the following command in the command terminal:
-
-    pip install goes_api
+This API can currently be installed via pip + github source code. 
 
 ## Citation
 
-If you are using GOES-API, please cite:
+This project is originally from PyPI distributed version of GOES-API Project from Ghiggi Gionata.
+
+So please cite:
 
 > Ghiggi Gionata. ghiggi/goes_api. Zenodo. https://doi.org/10.5281/zenodo.7787851
 
