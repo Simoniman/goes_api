@@ -330,6 +330,8 @@ def find_closest_start_time(
     # Define start_time and end_time
     start_time = time - timedelta
     end_time = time + timedelta
+    if end_time > datetime.datetime.utcnow():
+        end_time = datetime.datetime.utcnow()
     # Retrieve files
     fpath_dict = find_files(
         base_dir=base_dir,
