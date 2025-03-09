@@ -41,7 +41,7 @@ def get_abi_fixed_grid_extent(satellite, sector, resolution):
     if sector == "F":  
         area_extent = (-5434894.8851, -5434894.8851, 5434894.8851, 5434894.8851)
     elif sector == "C":
-        if satellite.lower() == "goes-16":
+        if satellite.lower() in ["goes-16", "goes-19"]:
             area_extent = (-3627271.2913, 1583173.6575, 1382771.9287, 4589199.5895)
         elif satellite.lower() in ["goes-17", "goes-18"]: 
             area_extent = (-2505021.61, 1583173.6575, 2505021.61, 4589199.5895)
@@ -54,7 +54,7 @@ def get_abi_fixed_grid_extent(satellite, sector, resolution):
 
 def get_abi_fixed_grid_projection(satellite):
     """Returns the projection dictionary of the ABI fixed grid."""
-    if satellite.lower() == "goes-16":
+    if satellite.lower() in ["goes-16", "goes-19"]:
         proj_dict = {
            "proj": "geos",
            "sweep": "x",

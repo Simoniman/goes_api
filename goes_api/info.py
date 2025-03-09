@@ -432,6 +432,8 @@ def _get_info_from_filename(fname):
         satellite = 'GOES-17'
     elif 'G18' == platform_shortname:
         satellite = 'GOES-18'
+    elif 'G19' == platform_shortname:
+        satellite = 'GOES-19'
     else:
         raise ValueError(f"Processing of satellite {platform_shortname} not yet implemented.")
     info_dict["satellite"] =  satellite  
